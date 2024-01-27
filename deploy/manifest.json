@@ -1,16 +1,16 @@
 {
   "name": "Muhasiba",
   "lang": "ar",
-  "start_url": "/",
+  "start_url": "/muhasiba-dev",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "description": "Muhasiba",
   "icons": [
     {
-        "src": "./icon.svg",
-        "sizes": "any",
-        "type": "image/svg+xml"
-      }
-]
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
 }
