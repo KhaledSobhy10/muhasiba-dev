@@ -10,6 +10,37 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
+
+      manifest: {
+        name: "Muhasiba",
+        short_name: "Muhasiba",
+        description: "Muhasiba",
+        theme_color: "#ffffff",
+        icons: [
+          {
+            src: "pwa-64x64.png",
+            sizes: "64x64",
+            type: "image/png",
+          },
+          {
+            src: "pwa-192x192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "pwa-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+          {
+            src: "maskable-icon-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "maskable",
+          },
+        ],
+      },
+
       devOptions: {
         enabled: true,
       },
@@ -21,5 +52,5 @@ export default defineConfig({
     },
   },
 
-  // base: "./", // Set the base URL for the production build
+  base: "./", // Set the base URL for the production build
 });
