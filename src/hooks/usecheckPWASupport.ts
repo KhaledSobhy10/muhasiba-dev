@@ -7,6 +7,10 @@ export default function useCheckPWASupport() {
     if ("serviceWorker" in navigator) {
       // PWA features are supported
       console.log("PWAs are supported on this browser.");
+      toast({
+        title: "Info",
+        description: "You can install app",
+      });
     } else {
       // PWA features are not supported
 
