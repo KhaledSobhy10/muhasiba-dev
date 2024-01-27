@@ -51,6 +51,8 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-
-  base: "./", // Set the base URL for the production build
+  base: "./", // Set the base URL for the production build,
+  build: {
+    outDir: "deploy",
+  },
 });

@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 const InstallButton: React.FC = () => {
   const [deferredPrompt, setDeferredPrompt] = useState<any | null>(null);
   const [isAppInstalled, setIsAppInstalled] = useState<boolean>(false);
-  console.log("🚀 ~ isAppInstalled:", isAppInstalled);
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (event: Event) => {
@@ -48,7 +47,7 @@ const InstallButton: React.FC = () => {
       disabled={isAppInstalled || !deferredPrompt}
       className="cursor-pointer"
     >
-      {isAppInstalled ? null : (
+      {isAppInstalled || !deferredPrompt ? null : (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
