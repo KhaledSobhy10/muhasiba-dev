@@ -1,0 +1,1097 @@
+{
+  "categories": [
+    {
+      "id": "75182.63417",
+      "title": "الصبح",
+      "description": "",
+      "maxScore": 21,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "46866.86574",
+          "title": "تبكير (مشي بسكينة)",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "22581.76274",
+          "title": "اذكار الاذان",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "88710.60224",
+          "title": "الدعاء بين اﻷذانين",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "34589.61855",
+          "title": "الجماعه الاولي",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "30208.83756",
+          "title": "تكبيرة الاحرام",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "38743.99024",
+          "title": "الصف الاول - السواك",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "88738.49871",
+          "title": "الخشوع",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "65359.29625",
+          "title": "اذكار بعد الصلاه ( في مكانك)",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "75.52227",
+          "title": "قضاء الفوائت",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "9539.21969",
+          "title": "اذكار الصباح",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "11234.55784",
+          "title": "الجلوس للشروق",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "3833.77138",
+          "title": "صلاة الضحي (4)",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "22287.57348",
+          "title": "قبيله ( الكافرون - الاخلاص)",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "52140.87617",
+      "title": "الظهر",
+      "description": "",
+      "maxScore": 19,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "29804.10979",
+          "title": "تبكير (مشي بسكينة)",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "76490.99878",
+          "title": "اذكار الاذان",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "86572.75821",
+          "title": "الدعاء بين اﻷذانين",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "48303.45390",
+          "title": "الجماعه الاولي",
+          "description": "",
+          "score": 4,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "23118.18139",
+          "title": "تكبيرة الاحرام",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "23876.61327",
+          "title": "الصف الاول - السواك",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "33680.84803",
+          "title": "الخشوع",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "92527.59851",
+          "title": "اذكار بعد الصلاه ( في مكانك)",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "29503.45210",
+          "title": "قضاء الفوائت",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "60941.16249",
+          "title": "السنه القبليه (4)",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "62553.41133",
+          "title": "السنة البعدية (4)",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "58629.48495",
+      "title": "العصر",
+      "description": "",
+      "maxScore": 17,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "90342.73408",
+          "title": "اذكار الاذان",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "99630.02868",
+          "title": "الدعاء بين اﻷذانين",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "43204.81377",
+          "title": "الجماعه الاولي",
+          "description": "",
+          "score": 4,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "96253.97213",
+          "title": "تكبيرة الاحرام",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "70138.20612",
+          "title": "الصف الاول - السواك",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "11873.66673",
+          "title": "الخشوع",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "88328.16258",
+          "title": "اذكار بعد الصلاه ( في مكانك)",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "51777.36846",
+          "title": "قضاء الفوائت",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "1417.49853",
+          "title": "السنة القبلية (4)",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "99986.91645",
+          "title": "اذكار المساء",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "59213.15457",
+      "title": "المغرب",
+      "description": "",
+      "maxScore": 15,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "12327.98658",
+          "title": "اذكار الاذان",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "57962.77656",
+          "title": "الدعاء بين اﻷذانين",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "18764.23042",
+          "title": "الجماعه الاولي",
+          "description": "",
+          "score": 4,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "76697.86663",
+          "title": "تكبيرة الاحرام",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "38857.31209",
+          "title": "الصف الاول - السواك",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "71320.48689",
+          "title": "الخشوع",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "10452.94773",
+          "title": "اذكار بعد الصلاه ( في مكانك)",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "37572.73911",
+          "title": "قضاء الفوائت",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "36691.81052",
+          "title": "السنة القبلية (4)",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "56900.43775",
+      "title": "العشاء",
+      "description": "",
+      "maxScore": 19,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "68192.10513",
+          "title": "اذكار الاذان",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "65668.95950",
+          "title": "الدعاء بين اﻷذانين",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "3695.64369",
+          "title": "الجماعه الاولي",
+          "description": "",
+          "score": 4,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "90535.88243",
+          "title": "تكبيرة الاحرام",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "23808.96594",
+          "title": "الصف الاول - السواك",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "52132.58705",
+          "title": "الخشوع",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "89298.63410",
+          "title": "اذكار بعد الصلاه ( في مكانك)",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "66830.72797",
+          "title": "قضاء الفوائت",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "70665.45465",
+          "title": "السنة القبلية (4)",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "85366.72320",
+          "title": "قيام الركعات",
+          "description": "",
+          "score": 4,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "8270.56743",
+      "title": "السحر",
+      "description": "",
+      "maxScore": 1,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "7407.68748",
+          "title": "الوتر (اﻷعلي - الكافرون - الاخلاص)",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "59540.66067",
+      "title": "القرآن",
+      "description": "",
+      "maxScore": 15,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "96769.45792",
+          "title": "ورد القرآن",
+          "description": "",
+          "score": 4,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "6971.05518",
+          "title": "التدبر",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "16592.76244",
+          "title": "الحفظ اليومي",
+          "description": "",
+          "score": 5,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "5647.28448",
+          "title": "المراجعة",
+          "description": "",
+          "score": 5,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "14102.96724",
+      "title": "الدعاء",
+      "description": "",
+      "maxScore": 6,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "47548.57215",
+          "title": "للنفس / الذريه",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "78367.08525",
+          "title": "للوالدين / للمسلمين",
+          "description": "",
+          "score": 4,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "19460.02845",
+      "title": "الاذكار المقيدة",
+      "description": "",
+      "maxScore": 11,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "59858.14782",
+          "title": "الاستيقاظ",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1,
+          "completeDate": "2024-01-20T16:46:22.055Z"
+        },
+        {
+          "id": "28278.71891",
+          "title": "الخلاء",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1,
+          "completeDate": "2024-01-20T16:46:29.678Z"
+        },
+        {
+          "id": "12625.49092",
+          "title": "الوضوء",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "63120.54142",
+          "title": "لبس الثوب و خلعه",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "56670.33274",
+          "title": "الدخول والخروج من المنزل",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "30438.84623",
+          "title": "الركوب",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "77077.21115",
+          "title": "المشي للمسجد",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "88240.40188",
+          "title": "الدخول والخروج من المسجد",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "77063.88095",
+          "title": "الاكل و  الشرب",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "50407.54851",
+          "title": "كفارة المجلس",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "93081.50606",
+          "title": "اذكار واداب النوم",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "74082.51552",
+      "title": "الاذكار المطلقه ",
+      "description": "",
+      "maxScore": 12,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "38507.94069",
+          "title": "الاستغفار المطلق",
+          "description": "",
+          "score": 3,
+          "completed": false,
+          "priority": 1,
+          "completeDate": "2024-01-20T17:27:42.851Z"
+        },
+        {
+          "id": "59490.31447",
+          "title": "الصلاه على النبى",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "45348.10254",
+          "title": "الباقيات الصالحات",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "32220.47976",
+          "title": "كلميتان",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "61877.90297",
+          "title": "حوقله",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "26789.20666",
+          "title": "نخله فى الجنه",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "13953.50663",
+          "title": "قله الخلطة- قلة الكلام",
+          "description": "",
+          "score": 4,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "55987.01129",
+      "title": "اصلاح القلب",
+      "description": "",
+      "maxScore": 47,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "37896.33279",
+          "title": "قله النوم",
+          "description": "",
+          "score": 8,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "25135.50138",
+          "title": "ترك فضول النظر",
+          "description": "",
+          "score": 6,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "37967.45839",
+          "title": "خفظ الخواطر",
+          "description": "",
+          "score": 6,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "40228.70397",
+          "title": "صيام",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "86209.59350",
+          "title": "الصدقه",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "32066.79711",
+          "title": "المحافظه على الوضوء",
+          "description": "",
+          "score": 6,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "44057.77447",
+          "title": "التشويق لمواسم المغفره",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "77266.17935",
+          "title": "صلاة الاستخاره",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "44683.33458",
+          "title": "زيارة القبور",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "40025.55394",
+          "title": "الاستذان",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "8946.94342",
+          "title": "المشوره",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "46559.42952",
+          "title": "الاعتكاف",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "47766.92519",
+          "title": "حضور دروس العلم",
+          "description": "",
+          "score": 5,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "7295.87226",
+      "title": "علم",
+      "description": "",
+      "maxScore": 10,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "47621.53705",
+          "title": "مذاكره (منهج شرعى)",
+          "description": "",
+          "score": 5,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "99189.53882",
+          "title": "اصلاح البيت",
+          "description": "",
+          "score": 5,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "61112.76264",
+      "title": "دعوة",
+      "description": "",
+      "maxScore": 14,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "15636.57865",
+          "title": "الامر بالمعروف والنهى عن المنكر",
+          "description": "",
+          "score": 5,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "79757.13575",
+          "title": "كل يوم شخص",
+          "description": "",
+          "score": 5,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "86741.54552",
+          "title": "بر ولدين ( هديه - تقبيل ايدى)",
+          "description": "",
+          "score": 4,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "71782.16753",
+      "title": "حقوق",
+      "description": "",
+      "maxScore": 29,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "97943.02673",
+          "title": "طاعه القول بالمعروف",
+          "description": "",
+          "score": 4,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "79285.93790",
+          "title": "الاحسان والبر  للاخوة",
+          "description": "",
+          "score": 10,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "73856.53915",
+          "title": "صله الرحم",
+          "description": "",
+          "score": 10,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "97675.85461",
+          "title": "العلم الدنيوى",
+          "description": "",
+          "score": 5,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "93378.98083",
+      "title": "المحاسبه",
+      "description": "",
+      "maxScore": 2,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "90499.84155",
+          "title": "المحاسبة",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "51075.95373",
+      "title": "ختام اليوم",
+      "description": "",
+      "maxScore": 9,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "88532.07267",
+          "title": "استغفار السحر",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "39.60582",
+          "title": "توبه",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "3617.01157",
+          "title": "سنن الفطره",
+          "description": "",
+          "score": 5,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "6759.94270",
+      "title": "الجمعه ",
+      "description": "",
+      "maxScore": 36,
+      "currentScore": 0,
+      "tasks": [
+        {
+          "id": "10436.38004",
+          "title": "الغسل",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "36013.09470",
+          "title": "افضل الثياب",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "55360.43398",
+          "title": "الطيب",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "36564.07055",
+          "title": "اختيار المسجد الافضل",
+          "description": "",
+          "score": 2,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "78809.35789",
+          "title": "التكبير",
+          "description": "",
+          "score": 10,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "65292.33695",
+          "title": "سورة الكهف",
+          "description": "",
+          "score": 3,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "6902.95097",
+          "title": "الصلاه على النبى",
+          "description": "",
+          "score": 3,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "18947.98861",
+          "title": "الصلاه على النبى",
+          "description": "",
+          "score": 3,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "72225.10755",
+          "title": "السواك",
+          "description": "",
+          "score": 1,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "22570.79713",
+          "title": "الدعاء (صعود الامام)",
+          "description": "",
+          "score": 5,
+          "completed": false,
+          "priority": 1
+        },
+        {
+          "id": "67280.77145",
+          "title": "الدعاء(بعد العصر)",
+          "description": "",
+          "score": 5,
+          "completed": false,
+          "priority": 1
+        }
+      ],
+      "priority": 1
+    }
+  ]
+}
