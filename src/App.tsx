@@ -5,8 +5,10 @@ import { TaskProvider } from "./context/TaskContext";
 import CategoriesContainer from "./components/categoriesContainer";
 import { Toaster } from "./components/ui/toaster";
 import { ThemeProvider } from "./components/theme-provider";
+import useCheckPWASupport from "./hooks/usecheckPWASupport";
 
 function App() {
+  useCheckPWASupport();
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <TaskProvider>
