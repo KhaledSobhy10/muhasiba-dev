@@ -4,13 +4,15 @@ import { useEffect } from "react";
 export default function useCheckPWASupport() {
   const { toast } = useToast();
   useEffect(() => {
+    const handleBeforeInstallPrompt = (event: Event) => {
+      console.log("🚀 ~ handleBeforeInstallPrompt ~ event:", event);
+      event.preventDefault();
+    };
+
+    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
     if ("serviceWorker" in navigator) {
       // PWA features are supported
       console.log("PWAs are supported on this browser.");
-      toast({
-        title: "Info",
-        description: "You can install app",
-      });
     } else {
       // PWA features are not supported
 
