@@ -59,7 +59,7 @@ export default function CreateTask({ categoryId }: Props) {
 
       addTaskToCategory(dispatch, categoryId, newTask);
       toast({
-        description: ` تم اضافة مهمة ${title}`,
+        description: ` تم إضافة مهمة ${title}`,
       });
       setTitle("");
       setDescription("");
@@ -75,13 +75,11 @@ export default function CreateTask({ categoryId }: Props) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline" >
-        اضافة
-        </Button>
+        <Button variant="outline">إضافة</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
-          <DialogTitle>اضافة مهمة</DialogTitle>
+          <DialogTitle>إضافة مهمة</DialogTitle>
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">

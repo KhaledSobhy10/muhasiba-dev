@@ -55,7 +55,7 @@ export default function CreateCategory({}: Props) {
       formData.id = Math.random().toFixed(4);
       addCategory(dispatch, formData);
       toast({
-        description: `تم اضافة ${formData.title}`,
+        description: `تم إضافة ${formData.title}`,
       });
       setFormData({
         id: "",
@@ -73,13 +73,11 @@ export default function CreateCategory({}: Props) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline">
-         اضافة
-        </Button>
+        <Button variant="outline">إضافة</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
-          <DialogTitle>اضافة نوع جديد</DialogTitle>
+          <DialogTitle>إضافة نوع جديد</DialogTitle>
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">
