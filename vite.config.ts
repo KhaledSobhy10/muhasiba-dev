@@ -3,6 +3,10 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import basicSsl from "@vitejs/plugin-basic-ssl";
 import { VitePWA } from "vite-plugin-pwa";
+import { format } from "date-fns";
+import { ar } from "date-fns/locale";
+
+const currentDate = format(new Date(), "dd-MM-yyyy hh:mm a", { locale: ar });
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -54,5 +58,8 @@ export default defineConfig({
   base: "./", // Set the base URL for the production build,
   build: {
     outDir: "deploy",
+  },
+  define: {
+    "process.env.BUILD_DATE": JSON.stringify(currentDate),
   },
 });
