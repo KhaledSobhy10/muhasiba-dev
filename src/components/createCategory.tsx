@@ -73,7 +73,7 @@ export default function CreateCategory({}: Props) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline">إضافة</Button>
+        <Button variant="outline">إضافة نوع جديد</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>

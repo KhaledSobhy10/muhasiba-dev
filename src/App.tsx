@@ -6,6 +6,8 @@ import CategoriesContainer from "./components/categoriesContainer";
 import { Toaster } from "./components/ui/toaster";
 import { ThemeProvider } from "./components/theme-provider";
 import useCheckPWASupport from "./hooks/usecheckPWASupport";
+import { Route, Routes } from "react-router-dom";
+import Stat from "./components/pages/stat";
 
 function App() {
   useCheckPWASupport();
@@ -13,10 +15,27 @@ function App() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <TaskProvider>
         <Toaster />
-        <Layout>
-          <Header />
-          <CategoriesContainer />
-        </Layout>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Layout>
+                <>
+                  <Header />
+                  <CategoriesContainer />
+                </>
+              </Layout>
+            }
+          ></Route>
+          <Route
+            path="/stat"
+            element={
+              <Layout>
+                <Stat />
+              </Layout>
+            }
+          ></Route>
+        </Routes>
       </TaskProvider>
     </ThemeProvider>
   );

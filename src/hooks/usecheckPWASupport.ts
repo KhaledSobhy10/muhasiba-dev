@@ -5,7 +5,6 @@ export default function useCheckPWASupport() {
   const { toast } = useToast();
   useEffect(() => {
     const handleBeforeInstallPrompt = (event: Event) => {
-      console.log("🚀 ~ handleBeforeInstallPrompt ~ event:", event);
       event.preventDefault();
     };
 

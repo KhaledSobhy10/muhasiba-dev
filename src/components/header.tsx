@@ -9,7 +9,7 @@ export default function Header({}: Props) {
   const s = useTaskState();
   const calc = calculateCategorySums(s.categories);
   return (
-    <header className="mt-4 flex justify-between w-full sticky flex-wrap ">
+    <header className="flex justify-between w-full sticky flex-wrap ">
       <div className="md:w-fit w-full flex  flex-col gap-2">
         <div className="md:w-fit w-full flex items-center gap-2">
           <ModeToggle />
