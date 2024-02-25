@@ -90,7 +90,7 @@ export default function Stat({}: Props) {
   }, [duration]);
   console.log(`🚀 ~ Stat ~ categories: ${duration}`, categories);
   return (
-    <div>
+    <div className="w-full">
       <div className="flex justify-between">
         <div className="flex gap-2">
           <NavLink to={"/"}>
@@ -131,11 +131,7 @@ export default function Stat({}: Props) {
           </Select>
         </div>
       </div>
-      <Tabs
-        defaultValue={categories[0]?.id}
-        className="max-w-full mt-4"
-        dir="rtl"
-      >
+      <Tabs defaultValue={categories[0]?.id} className="w-full mt-4" dir="rtl">
         <TabsList className="max-w-full flex flex-wrap h-fit">
           {categories.map(({ id, title }) => (
             <TabsTrigger value={id}>{title}</TabsTrigger>
@@ -143,7 +139,7 @@ export default function Stat({}: Props) {
         </TabsList>
 
         {categories.map(({ id, tasks }) => (
-          <TabsContent value={id}>
+          <TabsContent value={id} className="w-full">
             <DataTable columns={getColumns(dates)} data={tasks} />
           </TabsContent>
         ))}

@@ -33,8 +33,8 @@ export function DataTable<TData, TValue>({
   });
 
   return (
-    <div className="rounded-md border ">
-      <Table className="max-w-full overflow-scroll">
+    <div className="rounded-md border w-full overflow-x-auto">
+      <Table className="w-full">
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
             <TableRow key={headerGroup.id}>
@@ -61,7 +61,7 @@ export function DataTable<TData, TValue>({
                 data-state={row.getIsSelected() && "selected"}
               >
                 {row.getVisibleCells().map((cell) => (
-                  <TableCell key={cell.id}>
+                  <TableCell key={cell.id} className="whitespace-nowrap">
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </TableCell>
                 ))}
