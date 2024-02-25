@@ -17,7 +17,7 @@ function App() {
         <Toaster />
         <Routes>
           <Route
-            path="/"
+            path="*"
             element={
               <Layout>
                 <>
