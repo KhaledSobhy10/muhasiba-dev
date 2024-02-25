@@ -84,6 +84,8 @@ export default function Stat({}: Props) {
   const [dates, setDates] = useState([
     `tasks_${format(new Date(), "dd/MM/yyyy")}_v1`,
   ]);
+
+  const [disableTabs, setDisableTabs] = useState(false);
   useEffect(() => {
     setDates(getDateRange(duration));
     setCategories(getTasksByDuration(duration));
@@ -93,7 +95,7 @@ export default function Stat({}: Props) {
     <div className="w-full">
       <div className="flex justify-between">
         <div className="flex gap-2">
-          <NavLink to={"/"}>
+          <NavLink to={"/muhasiba-dev"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -119,6 +121,7 @@ export default function Stat({}: Props) {
             defaultValue={duration}
             value={duration}
             onValueChange={(newDuration: Duration) => setDuration(newDuration)}
+            onOpenChange={(open) => setDisableTabs(open)}
           >
             <SelectTrigger className="w-[180px]">
               <SelectValue placeholder="اختر مدة التقرير" />
@@ -131,7 +134,11 @@ export default function Stat({}: Props) {
           </Select>
         </div>
       </div>
-      <Tabs defaultValue={categories[0]?.id} className="w-full mt-4" dir="rtl">
+      <Tabs
+        defaultValue={categories[0]?.id}
+        className={`w-full mt-4 ${disableTabs ? "pointer-events-none" : ""}`}
+        dir="rtl"
+      >
         <TabsList className="max-w-full flex flex-wrap h-fit">
           {categories.map(({ id, title }) => (
             <TabsTrigger value={id}>{title}</TabsTrigger>

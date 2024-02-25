@@ -1,7 +1,6 @@
 import CategoryItem from "./categoryItem";
 import { useDateState, useTaskState } from "@/context/TaskContext";
 import CreateCategory from "./createCategory";
-import { DatePickerWithPresets } from "./datePicker";
 import { NavLink } from "react-router-dom";
 
 type Props = {};
@@ -16,8 +15,8 @@ export default function CategoriesContainer({}: Props) {
   return (
     <div className="w-full flex justify-center items-center flex-col gap-4 mt-8">
       <div className="w-full flex justify-between">
-        <DatePickerWithPresets />
-        <NavLink to={"/stat"} title="الذهاب لتقارير" className="flex gap-1">
+        {/* <DatePickerWithPresets /> */}
+        <NavLink to={"stat"} title="الذهاب لتقارير" className="flex gap-1">
           <span className="underline"> الذهاب لتقارير</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"

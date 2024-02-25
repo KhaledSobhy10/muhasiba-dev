@@ -17,7 +17,7 @@ function App() {
         <Toaster />
         <Routes>
           <Route
-            path="*"
+            path="/muhasiba-dev"
             element={
               <Layout>
                 <>
@@ -28,7 +28,7 @@ function App() {
             }
           ></Route>
           <Route
-            path="/stat"
+            path="/muhasiba-dev/stat"
             element={
               <Layout>
                 <Stat />

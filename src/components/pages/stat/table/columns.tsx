@@ -1,5 +1,8 @@
 import { TaskWithHistory } from "@/types";
 import { ColumnDef, Row } from "@tanstack/react-table";
+import { arEG } from "date-fns/locale";
+import { format } from "date-fns";
+
 //@ts-nocheck
 
 export const columns: ColumnDef<TaskWithHistory>[] = [
@@ -46,11 +49,19 @@ export const columns: ColumnDef<TaskWithHistory>[] = [
   },
 ];
 
+const formateDate = (dateString: string) => {
+  const dateParts = dateString.split("/").reverse(); // Reverse to get year first
+  const date = new Date(dateParts.join("-")); // Create a Date object
+  return format(date, "EEEE dd MMMM yyyy", {
+    locale: arEG,
+  });
+};
+
 export const getColumns = (dates: string[]): ColumnDef<TaskWithHistory>[] => {
   const datesColumns = dates.map((date) => {
     return {
       accessorKey: `history`,
-      header: date.split("_")[1], // Ensure key is unique
+      header: formateDate(date.split("_")[1]),
       cell: ({ row }: { row: Row<TaskWithHistory> }) =>
         // @ts-ignore
         row.getValue(`history`)[date] ? (
