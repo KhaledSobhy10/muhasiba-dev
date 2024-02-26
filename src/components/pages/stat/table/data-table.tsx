@@ -15,6 +15,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
+// import { useEffect } from "react";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -32,12 +33,16 @@ export function DataTable<TData, TValue>({
     getPaginationRowModel: getPaginationRowModel(),
   });
 
+  // useEffect(() => {
+  //   table.setPageSize(2);
+  // }, []);
+
   return (
     <div className="rounded-md border w-full overflow-x-auto">
       <Table className="w-full">
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
-            <TableRow key={headerGroup.id}>
+            <TableRow key={headerGroup.id} className="hidden md:table-row">
               {headerGroup.headers.map((header) => {
                 return (
                   <TableHead key={header.id} className="text-start">
@@ -61,7 +66,14 @@ export function DataTable<TData, TValue>({
                 data-state={row.getIsSelected() && "selected"}
               >
                 {row.getVisibleCells().map((cell) => (
-                  <TableCell key={cell.id} className="whitespace-nowrap">
+                  <TableCell
+                    key={cell.id}
+                    className="whitespace-nowrap md:table-cell  p-2 md:p-4 relative md:text-start grid grid-cols-[20ch,auto] items-center"
+                    data-cell={cell.column.columnDef.header}
+                  >
+                    <span className="font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0  md:hidden ">
+                      {cell.column.columnDef.header + ""}
+                    </span>
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </TableCell>
                 ))}
