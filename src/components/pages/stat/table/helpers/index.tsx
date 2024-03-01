@@ -50,3 +50,44 @@ export const mergeCategoriesAndTasks = (
 
   return mergedCategories;
 };
+
+export type TaskForReport = {
+  title: string;
+  completedNo: number;
+  total: number;
+};
+
+type TaskMap = {
+  [key: string]: TaskForReport;
+};
+
+export const mergeTasksByTitle = (
+  categoriesWithDate: Record<string, Category[]>
+): TaskMap => {
+  const taskMap: TaskMap = {};
+  // loop over categoriesWithDate
+  Object.keys(categoriesWithDate).forEach((date) => {
+    const categories = categoriesWithDate[date];
+    categories.forEach((category) => {
+      category.tasks.forEach((task) => {
+        const isCompleted = task.completed ? 1 : 0;
+        const savedTask = taskMap[task.title];
+        if (savedTask) {
+          taskMap[task.title] = {
+            title: task.title,
+            completedNo: savedTask.completedNo + isCompleted,
+            total: savedTask.total + 1,
+          };
+        } else {
+          taskMap[task.title] = {
+            title: task.title,
+            completedNo: isCompleted,
+            total: 1,
+          };
+        }
+      });
+    });
+  });
+
+  return taskMap;
+};

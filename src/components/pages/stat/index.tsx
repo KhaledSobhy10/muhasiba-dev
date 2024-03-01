@@ -1,10 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { DataTable } from "./table/data-table";
-import { getColumns } from "./table/columns";
 import { Category } from "@/types";
 import { format } from "date-fns";
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Select,
   SelectContent,
@@ -13,7 +11,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useEffect, useState } from "react";
-import { mergeCategoriesAndTasks } from "./table/helpers";
+import { mergeTasksByTitle } from "./table/helpers";
+import { smallColumns } from "./table/smallColumns";
 
 type Props = {};
 
@@ -51,46 +50,43 @@ const getTasksByDateRange = (daysToSubtract: number) => {
         .categories as Category[];
     }
   }
-  return mergeCategoriesAndTasks(categoriesWithDate);
+  return mergeTasksByTitle(categoriesWithDate);
+
+  // return mergeCategoriesAndTasks(categoriesWithDate);
 };
 
-const getDateRange = (duration: Duration) => {
-  let daysToSubtract = 0;
-  switch (duration) {
-    case Duration.Today:
-      daysToSubtract = 1;
-      break;
-    case Duration.Last3Days:
-      daysToSubtract = 3;
-      break;
-    case Duration.Last7Days:
-      daysToSubtract = 7;
-      break;
-    default:
-      daysToSubtract = 0;
-  }
-  const endDate = new Date();
-  const dates = [];
-  for (let i = 0; i < daysToSubtract; i++) {
-    const currentDate = new Date(endDate.getTime() - i * 24 * 60 * 60 * 1000);
-    dates.push(`tasks_${format(currentDate, "dd/MM/yyyy")}_v1`);
-  }
-  return dates;
-};
+// const getDateRange = (duration: Duration) => {
+//   let daysToSubtract = 0;
+//   switch (duration) {
+//     case Duration.Today:
+//       daysToSubtract = 1;
+//       break;
+//     case Duration.Last3Days:
+//       daysToSubtract = 3;
+//       break;
+//     case Duration.Last7Days:
+//       daysToSubtract = 7;
+//       break;
+//     default:
+//       daysToSubtract = 0;
+//   }
+//   const endDate = new Date();
+//   const dates = [];
+//   for (let i = 0; i < daysToSubtract; i++) {
+//     const currentDate = new Date(endDate.getTime() - i * 24 * 60 * 60 * 1000);
+//     dates.push(`tasks_${format(currentDate, "dd/MM/yyyy")}_v1`);
+//   }
+//   return dates;
+// };
 
 export default function Stat({}: Props) {
   const [duration, setDuration] = useState<Duration>(Duration.Today); // Set initial value
   const [categories, setCategories] = useState(getTasksByDuration(duration));
-  const [dates, setDates] = useState([
-    `tasks_${format(new Date(), "dd/MM/yyyy")}_v1`,
-  ]);
 
-  const [disableTabs, setDisableTabs] = useState(false);
   useEffect(() => {
-    setDates(getDateRange(duration));
     setCategories(getTasksByDuration(duration));
   }, [duration]);
-  console.log(`🚀 ~ Stat ~ categories: ${duration}`, categories);
+  // console.log(`🚀 ~ Stat ~ categories: ${duration}`, categories);
   return (
     <div className="w-full">
       <div className="flex justify-between">
@@ -121,7 +117,6 @@ export default function Stat({}: Props) {
             defaultValue={duration}
             value={duration}
             onValueChange={(newDuration: Duration) => setDuration(newDuration)}
-            onOpenChange={(open) => setDisableTabs(open)}
           >
             <SelectTrigger className="w-[180px]">
               <SelectValue placeholder="اختر مدة التقرير" />
@@ -134,7 +129,7 @@ export default function Stat({}: Props) {
           </Select>
         </div>
       </div>
-      <Tabs
+      {/* <Tabs
         defaultValue={categories[0]?.id}
         className={`w-full mt-4 ${disableTabs ? "pointer-events-none" : ""}`}
         dir="rtl"
@@ -150,7 +145,24 @@ export default function Stat({}: Props) {
             <DataTable columns={getColumns(dates)} data={tasks} />
           </TabsContent>
         ))}
-      </Tabs>
+      </Tabs> */}
+      {/* {Object.entries(categories).map(([key, task]) => {
+        if (task.completedNo === task.total) return;
+        return (
+          <div key={key}>
+            <TaskReportMessage task={task} />
+          </div>
+        );
+      })} */}
+
+      <div className="mt-2">
+        <DataTable
+          columns={smallColumns}
+          data={Object.entries(categories)
+            .map(([_, task]) => task)
+            .filter(({ total, completedNo }) => total !== completedNo)}
+        />
+      </div>
     </div>
   );
 }
