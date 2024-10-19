@@ -10,16 +10,19 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { useDateState } from "@/context/TaskContext";
+import { getFromDate } from "@/lib/date";
+import dayjs from "dayjs";
 
 export function DatePickerWithPresets() {
   const dateState = useDateState();
+
   return (
     <Popover>
       <PopoverTrigger asChild>
         <Button
           variant={"outline"}
           className={cn(
-            "w-[200px] justify-start text-left font-normal flex gap-2 items-center ",
+            "w-fit justify-start  text-left font-normal flex gap-2 items-center ",
             !dateState.date && "text-muted-foreground"
           )}
         >
@@ -29,7 +32,7 @@ export function DatePickerWithPresets() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-5 h-5 print:hidden"
           >
             <path
               strokeLinecap="round"
@@ -42,6 +45,27 @@ export function DatePickerWithPresets() {
           ) : (
             <span>اختر التاريخ</span>
           )}
+          <div>({getFromDate(dateState.date)})</div>
+          {!dayjs(dateState.date).isSame(new Date(), "day") ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-4"
+              onClick={(e) => {
+                dateState.changeDate(new Date());
+                e.preventDefault();
+              }}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"
+              />
+            </svg>
+          ) : null}
         </Button>
       </PopoverTrigger>
       <PopoverContent

@@ -1,7 +1,8 @@
 import CategoryItem from "./categoryItem";
 import { useDateState, useTaskState } from "@/context/TaskContext";
-import CreateCategory from "./createCategory";
 import { NavLink } from "react-router-dom";
+import { DatePickerWithPresets } from "./datePicker";
+import { useBeforePrint } from "@/hooks/useBeforePrint";
 
 type Props = {};
 function isFriday(date: Date) {
@@ -11,12 +12,16 @@ function isFriday(date: Date) {
 export default function CategoriesContainer({}: Props) {
   const state = useTaskState();
   const dateState = useDateState();
-
+  const { onBeforePrintFired } = useBeforePrint();
   return (
     <div className="w-full flex justify-center items-center flex-col gap-4 mt-8">
-      <div className="w-full flex justify-between">
-        {/* <DatePickerWithPresets /> */}
-        <NavLink to={"stat"} title="الذهاب لتقارير" className="flex gap-1">
+      <div className="w-full flex justify-between flex-wrap gap-2 items-center">
+        <DatePickerWithPresets />
+        <NavLink
+          to={"stat"}
+          title="الذهاب لتقارير"
+          className="flex gap-1 print:hidden"
+        >
           <span className="underline"> الذهاب لتقارير</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +38,7 @@ export default function CategoriesContainer({}: Props) {
             />
           </svg>
         </NavLink>
-        <CreateCategory />
+        {/* <CreateCategory /> */}
       </div>
       {state?.categories
         .slice(
@@ -43,7 +48,11 @@ export default function CategoriesContainer({}: Props) {
             : state.categories.length - 1
         )
         .map((category) => (
-          <CategoryItem category={category} key={category.id} />
+          <CategoryItem
+            category={category}
+            key={category.id}
+            isOpen={onBeforePrintFired}
+          />
         ))}
     </div>
   );

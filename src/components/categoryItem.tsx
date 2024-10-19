@@ -8,13 +8,12 @@ import {
 import { Badge } from "./ui/badge";
 import TaskItem from "./taskItem";
 import { Category } from "@/types";
-import CreateTask from "./createTask";
 import { useState } from "react";
 
-type Props = { category: Category };
+type Props = { category: Category; isOpen?: boolean };
 
-export default function CategoryItem({ category }: Props) {
-  const [accordionOpen, setAccordionOpen] = useState("");
+export default function CategoryItem({ category, isOpen }: Props) {
+  const [accordionOpen, setAccordionOpen] = useState(isOpen ? "item-1" : "");
 
   const toggleAccordion = () => {
     setAccordionOpen((prev) => (prev === "item-1" ? "" : "item-1"));
@@ -44,7 +43,10 @@ export default function CategoryItem({ category }: Props) {
         </Accordion>
         <div className="mt-4 flex justify-between items-center w-full">
           <div className="flex gap-2 ">
-            <Badge className="bg-gray-500 cursor-pointer" onClick={() => toggleAccordion()}>
+            <Badge
+              className="bg-gray-500 cursor-pointer"
+              onClick={() => toggleAccordion()}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -79,7 +81,7 @@ export default function CategoryItem({ category }: Props) {
               تم {category?.tasks?.filter(({ completed }) => completed)?.length}
             </Badge>
           </div>
-          <CreateTask categoryId={category?.id} />
+          {/* <CreateTask categoryId={category?.id} /> */}
         </div>
       </CardContent>
     </Card>
